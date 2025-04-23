@@ -1,18 +1,15 @@
-{
-  "name": "digital-immortality",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "remix build",
-    "start": "remix-serve build",
-    "dev": "remix dev"
-  },
-  "dependencies": {
-    "@remix-run/react": "^2.7.0",
-    "@remix-run/serve": "^2.7.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^2.7.0"
-  }
+"dependencies": {
+  "@remix-run/react": "^2.7.0",
+  "@remix-run/serve": "^2.7.0",
+  "@remix-run/vercel": "^2.7.0",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0"
+},
+"devDependencies": {
+  "@remix-run/dev": "^2.7.0"
+},
+"scripts": {
+  "dev": "remix dev",
+  "build": "remix build",
+  "start": "remix-serve build"
 }
