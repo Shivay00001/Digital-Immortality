@@ -1,19 +1,8 @@
-{
-  "name": "digital-immortality-app",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-  "remix-run/dev" 
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0",
-  "firebase": "^10.0.0",
-  "react-router-dom": "^6.18.0",
-  "react-scripts": "5.0.1"
-}
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  }
-}
+/** @type {import('@remix-run/dev').AppConfig} */
+module.exports = {
+  appDirectory: "app",
+  assetsBuildDirectory: "public/build",
+  publicPath: "/build/",
+  serverBuildPath: "build/index.js",
+  serverModuleFormat: "cjs"
+};
