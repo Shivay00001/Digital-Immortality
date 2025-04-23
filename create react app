@@ -1,7 +1,7 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
   appDirectory: "app",
+  ignoredRouteFiles: ["**/.*"],
   serverBuildTarget: "vercel",
-  server: "./server.js",
-  ignoredRouteFiles: ["**/.*"]
+  server: "./server.js"
 };
