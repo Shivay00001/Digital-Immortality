@@ -1,7 +1,8 @@
-
-
-// remix.config.js
+/** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
-  serverBuildTarget: "vercel",
-  // other configuration...
+  appDirectory: "app",
+  assetsBuildDirectory: "public/build",
+  publicPath: "/build/",
+  serverBuildPath: "build/index.js",
+  serverModuleFormat: "cjs"
 };
