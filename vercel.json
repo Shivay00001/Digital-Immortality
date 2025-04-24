@@ -1,20 +1,5 @@
 {
   "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
   "outputDirectory": "public",
   "framework": "other"
-}
-{
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node"
-    }
-  ]
-}
-{
-  "framework": "remix"
-}
-{
-  "framework": "remix"
 }
