@@ -1,6 +1,5 @@
 {
   "name": "digital-immortality",
-  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "remix dev",
@@ -8,13 +7,14 @@
     "start": "remix-serve build"
   },
   "dependencies": {
-    "@remix-run/react": "^2.7.0",
-    "firebase": "^9.0.0",
+    "@remix-run/react": "^2.6.0",
+    "@remix-run/serve": "^2.6.0",
+    "firebase": "^9.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.7.0",
-    "@remix-run/serve": "^2.7.0"
+    "@remix-run/dev": "^2.6.0",
+    "typescript": "^5.0.0"
   }
 }
