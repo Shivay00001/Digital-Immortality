@@ -1,8 +1,7 @@
-/** @type {import('@remix-run/dev').AppConfig} */
+
+
+// remix.config.js
 module.exports = {
-  appDirectory: "app",
-  assetsBuildDirectory: "public/build",
-  publicPath: "/build/",
-  serverBuildDirectory: "build",
-  serverModuleFormat: "esm",
+  serverBuildTarget: "vercel",
+  // other configuration...
 };
