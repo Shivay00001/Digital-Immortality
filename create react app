@@ -6,15 +6,3 @@ module.exports = {
   serverBuildDirectory: "build",
   serverModuleFormat: "esm",
 };
-module.exports = {
-  serverBuildTarget: "vercel", // Use this for Vercel deployment
-  ignoredRouteFiles: ["**/.*"], // Ignore unnecessary files
-  future: {
-    v2_meta: true, // Enable v2 features in Remix
-  },
-};
-// remix.config.js
-module.exports = {
-  serverBuildTarget: "vercel",
-  // other configuration...
-};
