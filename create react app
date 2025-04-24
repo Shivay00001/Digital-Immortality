@@ -1,3 +1,11 @@
+/** @type {import('@remix-run/dev').AppConfig} */
+module.exports = {
+  appDirectory: "app",
+  assetsBuildDirectory: "public/build",
+  publicPath: "/build/",
+  serverBuildDirectory: "build",
+  serverModuleFormat: "esm",
+};
 module.exports = {
   serverBuildTarget: "vercel", // Use this for Vercel deployment
   ignoredRouteFiles: ["**/.*"], // Ignore unnecessary files
