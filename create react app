@@ -13,3 +13,8 @@ module.exports = {
     v2_meta: true, // Enable v2 features in Remix
   },
 };
+// remix.config.js
+module.exports = {
+  serverBuildTarget: "vercel",
+  // other configuration...
+};
