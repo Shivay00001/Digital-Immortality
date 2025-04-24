@@ -1,0 +1,11 @@
+your-app/
+├── app/
+│   ├── routes/
+│   │   └── index.jsx
+│   ├── root.jsx
+│   ├── entry.client.jsx
+│   └── entry.server.jsx
+├── public/
+├── package.json
+├── remix.config.js
+└── .vercel.json
