@@ -4,3 +4,11 @@
   "outputDirectory": "public",
   "framework": "other"
 }
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ]
+}
