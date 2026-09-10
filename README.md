@@ -30,3 +30,13 @@ My GitHub Stats
 
    [![](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/Visionquantech)
    [![](https://storage.ko-fi.com/cdn/kofi2.png?v=3)](https://www.ko-fi.com/Visionquantech)
+
+## Prerequisites
+- Required environment and dependencies
+
+## Installation
+Follow standard installation steps for this language.
+
+## Usage
+Instructions on how to run the project.
+
