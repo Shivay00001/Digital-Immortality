@@ -1,50 +1,41 @@
-# Digital Immortality
+# Digital Immortality — memories notes app (Firebase demo)
 
-Digital Immortality — preserve, simulate, and extend your digital legacy.
+A React notes app ("memories") backed by Firebase: sign in with Google,
+save text memories to Firestore, list them, sign out. Built on Remix
+(`app/`), with a standalone `app.js` variant as well.
 
-![Language](https://img.shields.io/badge/Language-JavaScript-blue)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![License](https://img.shields.io/badge/License-MIT-green)
+## Firebase config — how to supply your key
 
-## 🚀 Overview
+- **No Firebase key is hardcoded in the working tree.** Both `app.js` and
+  `app/routes/index.jsx` import the shared config from `firebase.config.js`,
+  which reads `FIREBASE_API_KEY` (and the other `FIREBASE_*` values) from the
+  environment and falls back to `YOUR_*` placeholders.
+- Copy `.env.example` to `.env` and fill in your project's values from the
+  Firebase console (Project settings → General → Your apps).
+- `.env` is gitignored.
 
-Welcome to the **Digital Immortality** repository. This project is built to deliver a robust and scalable solution tailored to modern development standards.
+**Important:** the Firebase web API key was previously hardcoded in this
+repo and is still present in git history (history was deliberately not
+rewritten). Rotate the key in the Firebase console
+(Project settings → API keys) and restrict it (HTTP referrers / API
+restrictions) before any real use.
 
-## ✨ Features
+## How to run
 
-- **High Performance:** Optimized for speed and efficiency.
-- **Scalable Architecture:** Designed to grow with your needs.
-- **Clean Codebase:** Follows best practices and industry standards.
-- **Secure by Default:** Engineered with security in mind.
+**Prerequisites:** Node.js 18+
 
-## 🛠️ Prerequisites
+1. `npm install`
+2. Create `.env` from `.env.example` with your Firebase config
+3. `npm run dev` (Remix dev server)
 
-Ensure you have the following installed in your environment before proceeding:
-- Appropriate runtime/compiler for `JavaScript`
-- Standard development tools
+## Current state (honest)
 
-## 📦 Installation
+- `index.html` serves a static landing page; the Remix app in `app/`
+  (route `app/routes/index.jsx`) and the standalone `app.js` hold the real
+  notes-app functionality.
+- Without a real `FIREBASE_API_KEY`, the app loads but Firebase calls
+  (sign-in, Firestore) fail — by design, since no key is bundled.
 
-Follow standard installation steps for `JavaScript` to set up the project locally:
+## License
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Shivay00001/Digital-Immortality.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Digital-Immortality
-   ```
-3. Install dependencies according to the standard `JavaScript` ecosystem.
-
-## 💻 Usage
-
-Run the project using standard execution commands for `JavaScript`. Ensure all environment variables and configurations are set prior to execution.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-
-## 📝 License
-
-This project is licensed under standard terms.
+See LICENSE.

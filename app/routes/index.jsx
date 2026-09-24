@@ -6,15 +6,10 @@ import {
 import {
   getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut
 } from 'firebase/auth';
+import { firebaseConfig } from '../firebase.config.js';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCoLh5UXizvZkKRKK6zUHDlwVA0EjcwxVE",
-  authDomain: "digital-immortality1.firebaseapp.com",
-  projectId: "digital-immortality1",
-  storageBucket: "digital-immortality1.appspot.com",
-  messagingSenderId: "28222298619",
-  appId: "1:28222298619:web:188e39e8c1af978ea6d35e"
-};
+
+/* Firebase config now comes from the shared module below — no keys hardcoded. */
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
